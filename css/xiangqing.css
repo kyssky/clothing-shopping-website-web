@@ -1,0 +1,30 @@
+.clothing-item{
+    position: relative;
+    overflow: hidden;
+    padding-left: 0!important;
+    padding-right: 0!important;
+
+}
+.clothing-item>img{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.clothing-item .ppp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.5);
+    margin-top: 0;
+    opacity: 0;
+    height: auto;
+}
+.clothing-item .ppp * {
+    color: #333333;
+    font-size: 19px;
+}
+.clothing-item .ppp:hover{
+    opacity: 0.9;
+}
+

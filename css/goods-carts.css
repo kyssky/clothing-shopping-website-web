@@ -1,0 +1,24 @@
+.info{
+    background: #efefef;
+    padding: 0;
+
+}
+.cloth-item{
+    background: #fff;
+
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #efefef;
+}
+.g-info{
+    color: #666;
+}
+.my-gouwuCart{
+    vertical-align: top;
+    font-size: 14px;
+}

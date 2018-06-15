@@ -23,28 +23,33 @@
                         </div>
                     </div>
                     <div class="col-xs-7">
-                        <div class="row">
-                            <div class="col-xs-3">男装</div>
-                            <div class="col-xs-3">女装</div>
-                            <div class="col-xs-3">休闲装</div>
-                            <div class="col-xs-3">运动装</div>
+                        <div class="row"  id="big-catelog">
+                            <div class="col-xs-3" data-num="0" >男装</div>
+                            <div class="col-xs-3" data-num="1">女装</div>
+                            <div class="col-xs-3" data-num="2">休闲装</div>
+                            <div class="col-xs-3" data-num="3">运动装</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="header-right col-xs-5">
                 <div class="row">
-                    <div class="col-xs-7 col-xs-offset-5">
+                    <div class="col-xs-10 col-xs-offset-2">
                         <div class="row">
-                            <div class="user col-xs-4 col-xs-offset-1">
+                            <div class="user col-xs-3">
                             <span style="background: url('icon/user.png') no-repeat 0px 0px;
                             background-size:100% 100%;width: 22px;height: 22px;display: inline-block"></span>
-                                <a data-toggle="modal" data-target="#login" class="glyphicon" style="vertical-align: top;">登入</a>
+                                <a id="user-iii" data-toggle="modal" data-target="#login" class="glyphicon" style="vertical-align: top;">登入</a>
                             </div>
-                            <div class="goods-card col-xs-6">
+                            <div class="goods-card col-xs-4">
                             <span style="background: url('icon/goods-card.png') no-repeat 0px 0px;
                             width: 22px;background-size:100% 100%;height: 22px;display: inline-block;"></span>
-                                <a href="goods-card.html" style="vertical-align: top;">我的购物车(0)</a>
+                                <a href="goods-cart.html" id="card-iii" style="vertical-align: top;">购物车(0)</a>
+                            </div>
+                            <div class="goods-card col-xs-4">
+                            <span style="background: url('icon/goods-card.png') no-repeat 0px 0px;
+                            width: 22px;background-size:100% 100%;height: 22px;display: inline-block;"></span>
+                                <a href="order.html" id="order-iii" style="vertical-align: top;">我的订单</a>
                             </div>
                         </div>
                     </div>
@@ -58,9 +63,9 @@
     <div class="row">
         <div class="col-xs-4 h5">
             <div class="row">
-                <div class="col-xs-2 col-xs-offset-1" style="padding: 0px">home/</div>
-                <div class="col-xs-2" style="padding: 0px;">男装/</div>
-                <div class="col-xs-2" style="padding: 0px;">T恤衫</div>
+                <div class="col-xs-2 col-xs-offset-1" style="padding: 0px">主页/</div>
+                <div class="col-xs-2 litle-cate-text" style="padding: 0px;"></div>
+                <div class="col-xs-2 litle-cate-text" style="padding: 0px;"></div>
             </div>
         </div>
     </div>
@@ -68,121 +73,16 @@
 
 <div class="container clothing-title">
     <div class="categration-name col-xs-12 h3" style="text-align: center">
-        冬季服装
+
     </div>
-    <div class="show-more" style="text-align: center">
-        <a href="#">查看更多</a>
-    </div>
-    <div class="row clothing-more col-xs-12">
-        <div class="row">
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem">
-                <img class="col-xs-12" src="icon/banner.jpg"/>
-                <div class="col-xs-12 ppp">
-                    <div class="men-1-name">一件大衣</div>
-                    <div class="men-1-j">这是一件冬天穿上的衣服</div>
-                    <div class="men-1-money">￥100</div>
-                </div>
-            </div>
-        </div>
+
+    <div class="row clothing-more col-xs-12" id="chun" >
+        <!-- 添加衣服-->
     </div>
 </div>
 <div class="container" style="text-align: center">
     <ul class="pagination">
-        <li><a href="#">&laquo;</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">&raquo;</a></li>
+
     </ul>
 </div>
 <div class="bottom-info container" style="text-align: center;margin-bottom: 5rem">
@@ -203,10 +103,12 @@
                     街拍
                 </div>
                 <a href="http://www.hel-looks.com/ " class="col-xs-12">http://www.hel-looks.com/ </a>
-                <a href="https://link.zhihu.com/?target=http%3A//droptokyo.com/street/" class="col-xs-12">Street Style</a>
+                <a href="https://link.zhihu.com/?target=http%3A//droptokyo.com/street/" class="col-xs-12">Street
+                    Style</a>
                 <a href="https://link.zhihu.com/?target=http%3A//www.fashionsnap.com/streetsnap/" class="col-xs-12">ストリートスナップ</a>
                 <a href="http://www.hel-looks.com/ " class="col-xs-12">http://www.hel-looks.com/ </a>
-                <a href="https://link.zhihu.com/?target=http%3A//droptokyo.com/street/" class="col-xs-12">Street Style</a>
+                <a href="https://link.zhihu.com/?target=http%3A//droptokyo.com/street/" class="col-xs-12">Street
+                    Style</a>
             </div>
         </div>
         <div class="line-1-2 col-xs-4">
@@ -214,9 +116,12 @@
                 <div class="bottom-title col-xs-12 h4">
                     其他购物网
                 </div>
-                <a href="https://link.zhihu.com/?target=http%3A//www.burton.co.uk/webapp/wcs/stores/servlet/TopCategoriesDisplay%3FstoreId%3D12551%26langId%3D-1%26catalogId%3D33052%26geoip%3Dhome" class="col-xs-12">Home | LN-CC</a>
-                <a href="https://link.zhihu.com/?target=http%3A//www.mindtrive.com/index.php" class="col-xs-12">Burton - Mens Clothing</a>
-                <a href="https://link.zhihu.com/?target=http%3A//www.ln-cc.com/page/home" class="col-xs-12">メンズセレクトショップ </a>
+                <a href="https://link.zhihu.com/?target=http%3A//www.burton.co.uk/webapp/wcs/stores/servlet/TopCategoriesDisplay%3FstoreId%3D12551%26langId%3D-1%26catalogId%3D33052%26geoip%3Dhome"
+                   class="col-xs-12">Home | LN-CC</a>
+                <a href="https://link.zhihu.com/?target=http%3A//www.mindtrive.com/index.php" class="col-xs-12">Burton -
+                    Mens Clothing</a>
+                <a href="https://link.zhihu.com/?target=http%3A//www.ln-cc.com/page/home"
+                   class="col-xs-12">メンズセレクトショップ </a>
             </div>
         </div>
     </div>
@@ -236,19 +141,19 @@
             <div class="modal-body">
                 <form class="form-group" action="">
                     <div class="form-group">
-                        <label >用户名</label>
+                        <label>用户名</label>
                         <input class="form-control" type="text" placeholder="6-15位字母或数字">
                     </div>
                     <div class="form-group">
-                        <label >密码</label>
+                        <label>密码</label>
                         <input class="form-control" type="password" placeholder="至少6位字母或数字">
                     </div>
                     <div class="form-group">
-                        <label >再次输入密码</label>
+                        <label>再次输入密码</label>
                         <input class="form-control" type="password" placeholder="至少6位字母或数字">
                     </div>
                     <div class="form-group">
-                        <label >邮箱</label>
+                        <label>邮箱</label>
                         <input class="form-control" type="email" placeholder="例如:123@123.com">
                     </div>
                     <div class="text-right">
@@ -276,11 +181,11 @@
             <div class="modal-body">
                 <form class="form-group" action="">
                     <div class="form-group">
-                        <label >用户名</label>
+                        <label>用户名</label>
                         <input class="form-control" type="text" placeholder="">
                     </div>
                     <div class="form-group">
-                        <label >密码</label>
+                        <label>密码</label>
                         <input class="form-control" type="password" placeholder="">
                     </div>
                     <div class="text-right">
@@ -295,6 +200,6 @@
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.js"></script>
+<script src="js/xiangqing2.js"></script><script src="js/islogin.js"></script>
 </body>
 </html>

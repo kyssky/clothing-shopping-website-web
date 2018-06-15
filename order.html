@@ -34,17 +34,22 @@
             </div>
             <div class="header-right col-xs-5">
                 <div class="row">
-                    <div class="col-xs-7 col-xs-offset-5">
+                    <div class="col-xs-10 col-xs-offset-2">
                         <div class="row">
-                            <div class="user col-xs-4 col-xs-offset-1">
+                            <div class="user col-xs-3">
                             <span style="background: url('icon/user.png') no-repeat 0px 0px;
                             background-size:100% 100%;width: 22px;height: 22px;display: inline-block"></span>
-                                <a data-toggle="modal" data-target="#login" class="glyphicon" style="vertical-align: top;">登入</a>
+                                <a id="user-iii" data-toggle="modal" data-target="#login" class="glyphicon" style="vertical-align: top;">登入</a>
                             </div>
-                            <div class="goods-card col-xs-6">
+                            <div class="goods-card col-xs-4">
                             <span style="background: url('icon/goods-card.png') no-repeat 0px 0px;
                             width: 22px;background-size:100% 100%;height: 22px;display: inline-block;"></span>
-                                <a href="goods-card.html" style="vertical-align: top;">我的购物车(0)</a>
+                                <a href="goods-cart.html" id="card-iii" style="vertical-align: top;">购物车(0)</a>
+                            </div>
+                            <div class="goods-card col-xs-4">
+                            <span style="background: url('icon/goods-card.png') no-repeat 0px 0px;
+                            width: 22px;background-size:100% 100%;height: 22px;display: inline-block;"></span>
+                                <a href="order.html" id="order-iii" style="vertical-align: top;">我的订单</a>
                             </div>
                         </div>
                     </div>
@@ -59,54 +64,21 @@
         <div class="col-xs-4 h5">
             <div class="row">
                 <div class="col-xs-2 col-xs-offset-1" style="padding: 0px">home/</div>
-                <div class="col-xs-2" style="padding: 0px;">购物车(0)</div>
+                <div class="col-xs-2" style="padding: 0px;">我的订单</div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="error-info container" style="text-align: center;border-bottom: 1px solid black">
-    <div class="row h2">
-        暂时没有您的订单信息
-    </div>
-    <div class="row h2">
-        请前往<a href="#">我们的网站</a>购买商品吧
-    </div>
-</div>
 
-<div class="container" style="text-align: center">
-    <div class="row col-xs-10 col-lg-offset-1 c-item">
-        <div class="d-id col-xs-3">订单编号：123456789</div>
-        <div class="d-number col-xs-3">商品数量:10</div>
-        <div class="d-money col-xs-3">总金额：￥1000</div>
-        <div class="d-goods col-xs-12">
-            <div class="g-id col-xs-3">
-                商品id：123123123
-            </div>
-            <div class="g-img col-xs-3">
-                <img src="icon/banner.jpg" class="col-xs-12" style="height: 100px;"/>
-            </div>
-            <div class="g-name col-xs-3">
-                <div class="g-info">一件衣服</div>
-                <div class="g-money">单价:￥1000</div>
-            </div>
-            <div class="g-number col-xs-3">
-                10
-            </div>
+
+<div class="container" id="orddd" style="text-align: center">
+    <div class="error-info container" style="text-align: center;border-bottom: 1px solid black">
+        <div class="row h2">
+            暂时没有您的订单信息
         </div>
-    </div>
-
-    <div class="row col-xs-10 col-lg-offset-1 c-item">
-        <div class="all-money col-xs-offset-9 col-xs-3" style="text-align: center">
-            总价格：￥1000
-        </div>
-    </div>
-</div>
-
-<div class="container create-order" >
-    <div class="row">
-        <div style="text-align: center;border: 1px solid black;padding-top: 1.5rem;padding-bottom: 1.5rem" class=" col-xs-offset-5 col-xs-2 h4">
-            下单
+        <div class="row h2">
+            请前往<a href="#">我们的网站</a>购买商品吧
         </div>
     </div>
 </div>
@@ -265,6 +237,6 @@
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.js"></script>
+<script src="js/order.js"></script>
 </body>
 </html>
