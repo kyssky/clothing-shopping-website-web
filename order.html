@@ -78,7 +78,7 @@
             暂时没有您的订单信息
         </div>
         <div class="row h2">
-            请前往<a href="#">我们的网站</a>购买商品吧
+            请前往<a href="/index.html">我们的网站</a>购买商品吧
         </div>
     </div>
 </div>
@@ -162,7 +162,6 @@
         </div>
     </div>
 </div>
-
 <!-- 注册窗口 -->
 <div id="register" class="modal fade" tabindex="-1">
     <div class="modal-dialog">
@@ -179,22 +178,22 @@
                 <form class="form-group" action="">
                     <div class="form-group">
                         <label >用户名</label>
-                        <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                        <input id="r-user-name" class="form-control" type="text" placeholder="6-15位字母或数字">
                     </div>
                     <div class="form-group">
                         <label >密码</label>
-                        <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                        <input id="r-user-password" class="form-control" type="password" placeholder="至少6位字母或数字">
                     </div>
                     <div class="form-group">
                         <label >再次输入密码</label>
-                        <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                        <input class="form-control" type="password" placeholder="至少6位字母或数字" id="r-user-password-2">
                     </div>
                     <div class="form-group">
                         <label >邮箱</label>
-                        <input class="form-control" type="email" placeholder="例如:123@123.com">
+                        <input id="r-email" class="form-control" type="email" placeholder="例如:123@123.com">
                     </div>
                     <div class="text-right">
-                        <button class="btn btn-primary" type="submit">提交</button>
+                        <button class="btn btn-primary" type="button" id="to-regise">提交</button>
                         <button class="btn btn-danger" data-dismiss="modal">取消</button>
                     </div>
                     <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
@@ -219,14 +218,14 @@
                 <form class="form-group" action="">
                     <div class="form-group">
                         <label >用户名</label>
-                        <input class="form-control" type="text" placeholder="">
+                        <input id="user-name" class="form-control" type="text" placeholder="">
                     </div>
                     <div class="form-group">
                         <label >密码</label>
-                        <input class="form-control" type="password" placeholder="">
+                        <input id="user-password" class="form-control" type="password" placeholder="">
                     </div>
                     <div class="text-right">
-                        <button class="btn btn-primary" type="submit">登录</button>
+                        <button class="btn btn-primary" type="button" id="start-login">登录</button>
                         <button class="btn btn-danger" data-dismiss="modal">取消</button>
                     </div>
                     <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
@@ -238,5 +237,6 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/order.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

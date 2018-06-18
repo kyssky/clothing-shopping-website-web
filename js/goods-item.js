@@ -122,6 +122,9 @@ $('.add-gouwuche button').click(function (e) {
     }
     else if (uuuu == null) {
         alert("请先登入")
+        window.location.href="index.html";
+    } else if (goodInfo.inventory<number) {
+        alert("对不起当前的商品库存不足")
     } else {
 
 

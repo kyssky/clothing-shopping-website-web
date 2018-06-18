@@ -21,7 +21,6 @@ $(document).ready(function () {
     console.log('index.js')
     $('.recomment-title').click(function (e) {
         var num = parseInt($(e.target).attr('data-num'), 10)
-
         window.location.href = "xiangqing.html?c=" + num;
     })
 

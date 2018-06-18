@@ -68,55 +68,17 @@ $(document).ready(function () {
                 if (dateArr.length === 0) {
                     return
                 }
-                var string = '<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[0].sku + '"  >' +
-                    '                <img class="col-xs-12" src="' + dateArr[0].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[0].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[0].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[0].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[1].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[1].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[1].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[1].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[1].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[2].sku + '" >' +
-                    '                <img class="col-xs-12" src="' + dateArr[2].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[2].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[2].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[2].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[3].sku + '" >' +
-                    '                <img class="col-xs-12" src="' + dateArr[3].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[3].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[3].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[3].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[4].sku + '" >' +
-                    '                <img class="col-xs-12" src="' + dateArr[4].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[4].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[4].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[4].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[5].sku + '" >' +
-                    '                <img class="col-xs-12" src="' + dateArr[5].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[5].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[5].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[5].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '        </div>';
+                var string = "";
+                for (var a=0;a<dateArr.length&&a<6;a++){
+                    string+='<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[a].sku + '">' +
+                        '                <img class="col-xs-12" src="' + dateArr[a].img + '"/>' +
+                        '                <div class="col-xs-12 ppp">' +
+                        '                    <div class="men-1-name">' + dateArr[a].goodsName + '</div>' +
+                        '                    <div class="men-1-j">' + dateArr[a].information + '</div>' +
+                        '                    <div class="men-1-money">' + dateArr[a].money + '</div>' +
+                        '                </div>'+
+                        '            </div>';
+                };
                 // console.log(string);
                 mydocument.innerHTML += string;
                 $('.clothing-item').click(function (e) {
@@ -146,55 +108,17 @@ $(document).ready(function () {
                 if (dateArr.length === 0) {
                     return
                 }
-                var string = '<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[0].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[0].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[0].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[0].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[0].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[1].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[1].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[1].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[1].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[1].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[2].sku + '" >' +
-                    '                <img class="col-xs-12" src="' + dateArr[2].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[2].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[2].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[2].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[3].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[3].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[3].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[3].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[3].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[4].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[4].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[4].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[4].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[4].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[5].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[5].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[5].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[5].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[5].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '        </div>';
+                var string = "";
+                for (var a=0;a<dateArr.length&&a<6;a++){
+                    string+='<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[a].sku + '">' +
+                        '                <img class="col-xs-12" src="' + dateArr[a].img + '"/>' +
+                        '                <div class="col-xs-12 ppp">' +
+                        '                    <div class="men-1-name">' + dateArr[a].goodsName + '</div>' +
+                        '                    <div class="men-1-j">' + dateArr[a].information + '</div>' +
+                        '                    <div class="men-1-money">' + dateArr[a].money + '</div>' +
+                        '                </div>'+
+                        '            </div>';
+                };
                 // console.log(string);
                 mydocument.innerHTML += string;
                 $('.clothing-item').click(function (e) {
@@ -224,56 +148,17 @@ $(document).ready(function () {
                 if (dateArr.length === 0) {
                     return
                 }
-                var string = '<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[0].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[0].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[0].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[0].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[0].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[1].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[1].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[1].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[1].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[1].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[2].sku + '" >' +
-                    '                <img class="col-xs-12" src="' + dateArr[2].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[2].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[2].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[2].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[3].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[3].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[3].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[3].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[3].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[4].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[4].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[4].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[4].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[4].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[5].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[5].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[5].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[5].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[5].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '        </div>';
-                // console.log(string);
+                var string = "";
+                for (var a=0;a<dateArr.length&&a<6;a++){
+                    string+='<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[a].sku + '">' +
+                        '                <img class="col-xs-12" src="' + dateArr[a].img + '"/>' +
+                        '                <div class="col-xs-12 ppp">' +
+                        '                    <div class="men-1-name">' + dateArr[a].goodsName + '</div>' +
+                        '                    <div class="men-1-j">' + dateArr[a].information + '</div>' +
+                        '                    <div class="men-1-money">' + dateArr[a].money + '</div>' +
+                        '                </div>'+
+                        '            </div>';
+                };
                 mydocument.innerHTML += string;
                 $('.clothing-item').click(function (e) {
                     window.open('goods-item.html?sku=' + $(this).attr("data-sku"))
@@ -302,57 +187,58 @@ $(document).ready(function () {
                 if (dateArr.length === 0) {
                     return
                 }
-                var string = '<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[0].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[0].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[0].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[0].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[0].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[1].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[1].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[1].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[1].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[1].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[2].sku + '" >' +
-                    '                <img class="col-xs-12" src="' + dateArr[2].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[2].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[2].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[2].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[3].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[3].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[3].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[3].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[3].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[4].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[4].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[4].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[4].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[4].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '            <div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[5].sku + '">' +
-                    '                <img class="col-xs-12" src="' + dateArr[5].img + '"/>' +
-                    '                <div class="col-xs-12 ppp">' +
-                    '                    <div class="men-1-name">' + dateArr[5].goodsName + '</div>' +
-                    '                    <div class="men-1-j">' + dateArr[5].information + '</div>' +
-                    '                    <div class="men-1-money">' + dateArr[5].money + '</div>' +
-                    '                </div>' +
-                    '            </div>' +
-                    '        </div>';
+                var string = "";
+                for (var a=0;a<dateArr.length&&a<6;a++){
+                    string+='<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[a].sku + '">' +
+                        '                <img class="col-xs-12" src="' + dateArr[a].img + '"/>' +
+                        '                <div class="col-xs-12 ppp">' +
+                        '                    <div class="men-1-name">' + dateArr[a].goodsName + '</div>' +
+                        '                    <div class="men-1-j">' + dateArr[a].information + '</div>' +
+                        '                    <div class="men-1-money">' + dateArr[a].money + '</div>' +
+                        '                </div>'+
+                        '            </div>';
+                };
                 // console.log(string);
-                mydocument.innerHTML = string;
+                mydocument.innerHTML += string;
+                $('.clothing-item').click(function (e) {
+                    window.open('goods-item.html?sku=' + $(this).attr("data-sku"))
+                })
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+    }
+    function get4() {
+        var type = "&categration=4";
+        var page = 1;
+
+        var pageSize = 6;
+        var mydocument = document.getElementById("dong4");
+        var documentItem;
+        $.ajax({
+            type: "get",
+            url: url + "?page=" + page + "&pageSize=" + pageSize + type + "&fcategration=" + fcategration,
+            async: true,
+            success: function (result) {
+                console.log(result);
+                var dateArr = result.infomation;
+                if (dateArr.length === 0) {
+                    return
+                }
+                var string = "";
+                for (var a=0;a<dateArr.length&&a<6;a++){
+                    string+='<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[a].sku + '">' +
+                        '                <img class="col-xs-12" src="' + dateArr[a].img + '"/>' +
+                        '                <div class="col-xs-12 ppp">' +
+                        '                    <div class="men-1-name">' + dateArr[a].goodsName + '</div>' +
+                        '                    <div class="men-1-j">' + dateArr[a].information + '</div>' +
+                        '                    <div class="men-1-money">' + dateArr[a].money + '</div>' +
+                        '                </div>'+
+                        '            </div>';
+                };
+                // console.log(string);
+                mydocument.innerHTML += string;
                 $('.clothing-item').click(function (e) {
                     window.open('goods-item.html?sku=' + $(this).attr("data-sku"))
                 })
@@ -363,16 +249,96 @@ $(document).ready(function () {
         });
     }
 
+    function get5() {
+        var type = "&categration=5";
+        var page = 1;
+
+        var pageSize = 6;
+        var mydocument = document.getElementById("dong5");
+        var documentItem;
+        $.ajax({
+            type: "get",
+            url: url + "?page=" + page + "&pageSize=" + pageSize + type + "&fcategration=" + fcategration,
+            async: true,
+            success: function (result) {
+                console.log(result);
+                var dateArr = result.infomation;
+                if (dateArr.length === 0) {
+                    return
+                }
+                var string = "";
+                for (var a=0;a<dateArr.length&&a<6;a++){
+                    string+='<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[a].sku + '">' +
+                        '                <img class="col-xs-12" src="' + dateArr[a].img + '"/>' +
+                        '                <div class="col-xs-12 ppp">' +
+                        '                    <div class="men-1-name">' + dateArr[a].goodsName + '</div>' +
+                        '                    <div class="men-1-j">' + dateArr[a].information + '</div>' +
+                        '                    <div class="men-1-money">' + dateArr[a].money + '</div>' +
+                        '                </div>'+
+                        '            </div>';
+                };
+                // console.log(string);
+                mydocument.innerHTML += string;
+                $('.clothing-item').click(function (e) {
+                    window.open('goods-item.html?sku=' + $(this).attr("data-sku"))
+                })
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+    }
+
+    function get6() {
+        var type = "&categration=6";
+        var page = 1;
+
+        var pageSize = 6;
+        var mydocument = document.getElementById("dong6");
+        var documentItem;
+        $.ajax({
+            type: "get",
+            url: url + "?page=" + page + "&pageSize=" + pageSize + type + "&fcategration=" + fcategration,
+            async: true,
+            success: function (result) {
+                console.log(result);
+                var dateArr = result.infomation;
+                if (dateArr.length === 0) {
+                    return
+                }
+                var string = "";
+                for (var a=0;a<dateArr.length&&a<6;a++){
+                    string+='<div class="clothing-item col-xs-4" style="margin-bottom: 1.5rem" data-sku="' + dateArr[a].sku + '">' +
+                        '                <img class="col-xs-12" src="' + dateArr[a].img + '"/>' +
+                        '                <div class="col-xs-12 ppp">' +
+                        '                    <div class="men-1-name">' + dateArr[a].goodsName + '</div>' +
+                        '                    <div class="men-1-j">' + dateArr[a].information + '</div>' +
+                        '                    <div class="men-1-money">' + dateArr[a].money + '</div>' +
+                        '                </div>'+
+                        '            </div>';
+                };
+                // console.log(string);
+                mydocument.innerHTML += string;
+                $('.clothing-item').click(function (e) {
+                    window.open('goods-item.html?sku=' + $(this).attr("data-sku"))
+                })
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+    }
     getchun();
     getxia();
     getqiu();
     getdong();
-
+    get4();
+    get5();
+    get6();
 // document.getElementsByClassName('litle-cate-text')[0].innerText = getLitleCategory(fcategration)
     $('.litle-cate-text')[0].innerText = getLitleCategory(fcategration)
 
     $('.categration-name').each(function () {
-
         $(this).text( clothingtype[$(this).attr("data-subc") ]  )
     })
 })

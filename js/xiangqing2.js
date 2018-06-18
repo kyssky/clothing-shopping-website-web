@@ -31,10 +31,7 @@ $(document).ready(function () {
             $(this).text(subtitle)
         }
     })
-
-
-    getinfo(1, 12)
-
+    getinfo(1, 6)
 
     function getinfo(page, pageSize) {
         var url = "api/goods-service/get_all_goods_by_categration";
@@ -50,7 +47,7 @@ $(document).ready(function () {
             success: function (result) {
                 console.log(result);
                 var dateArr = result.infomation;
-                var pageAll = result.pageAll ||4;
+                var pageAll = result.pageAll || 4;
                 var string = '';
                 console.log(string);
                 var innerString = "";
@@ -102,20 +99,7 @@ $(document).ready(function () {
                 var pageItem = $('.pagination li');
                 pageItem.each(function (index) {
                     $(this).click(function () {
-                        if (index === page) {
-                            return;
-                        } else if ($(this).text() == 'prev') {
-                            if(page != 1){
-                                getinfo(parseInt(page) - 1, 12);
-                            }
-                        } else if ($(this).text() == 'next') {
-                            if(page < pageAll){
-                                getinfo(parseInt(page) + 1, 12);
-                            }
-                        }
-                        else {
-                            getinfo(parseInt($(this).text()), 12);
-                        }
+                        getinfo(parseInt($(this).text()), pageSize);
                     })
                 })
             },
@@ -124,6 +108,4 @@ $(document).ready(function () {
             }
         });
     }
-
-
 })

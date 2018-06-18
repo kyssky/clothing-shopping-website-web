@@ -7,7 +7,7 @@
     height: 175px;
 }
 .ppp{
-    color: white;
+    /*color: white;*/
     font-size: 16px;
     height: 175px;
     margin-top: -175px;
@@ -28,14 +28,21 @@
     flex-direction: column;
     align-items:center;/*指定垂直居中*/
 }
+.ppp:hover{
+    background-color: white;
+    opacity: 0.8;
+}
+
 .ppp,.ppp2{
-    color: rgba(0,0,0,0);
+    /*color: rgba(0,0,0,0);*/
     cursor: pointer;
     transition: opacity 0.5s;
     opacity: 0;
 }
-.ppp:hover,.ppp2:hover{
-    color: rgba(0,0,0,1);
+.ppp2:hover{
+    color: black;
+    background-color: white;
+    opacity: .8;
 }
 
 
